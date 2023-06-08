@@ -2,14 +2,9 @@
 Utility functions.
 """
 
-import sublime
+from queue import Queue
 import threading
-
-try:
-    from queue import Queue
-except:
-    # ST2, Python 2
-    from Queue import Queue
+import sublime
 
 
 # Main sublime thread

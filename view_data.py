@@ -3,12 +3,7 @@ Helper module to attach custom data to sublime views.
 """
 
 from collections import defaultdict
-
-try:
-    from . import utils
-except:
-    # ST2
-    import utils
+from . import utils
 
 
 # Dictionary: view ID => view data

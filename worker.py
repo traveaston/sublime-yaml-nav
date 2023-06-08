@@ -2,11 +2,7 @@
 Module for executing tasks in separate thread.
 """
 
-try:
-    from queue import Queue
-except:
-    # ST2, Python 2
-    from Queue import Queue
+from queue import Queue
 
 import threading
 import traceback

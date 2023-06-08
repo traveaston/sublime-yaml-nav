@@ -3,12 +3,7 @@ This module provides functions for extracting YAML symbols.
 """
 
 import sublime
-
-try:
-    from . import utils
-except:
-    # ST2
-    import utils
+from . import utils
 
 
 def get_yaml_symbols(view):

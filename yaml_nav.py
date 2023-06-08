@@ -2,19 +2,12 @@
 Main plugin module with sublime commands and listeners.
 """
 
-import sublime
-import sublime_plugin
 import re
 import time
+import sublime
+import sublime_plugin
 
-try:
-    from . import yaml_math, view_data, worker, utils
-except:
-    # ST2
-    import yaml_math
-    import view_data
-    import worker
-    import utils
+from . import yaml_math, view_data, worker, utils
 
 
 # Status key for sublime status bar
