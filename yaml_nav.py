@@ -67,7 +67,7 @@ class YamlNavListener(sublime_plugin.EventListener):
             self.update_yaml_symbols(view)
 
     def on_new(self, view):
-        self.on_load(self, view)
+        self.on_load(view)
 
     def on_activated(self, view):
         if is_yaml_view(view):
