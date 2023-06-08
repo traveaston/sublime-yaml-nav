@@ -9,7 +9,8 @@ from . import utils
 def get_yaml_symbols(view):
     """
     Returns YAML key paths and associated regions for given sublime view.
-    Paths calculated by key indentation level -- it's more efficient and secure, but doesn't support inline hashes.
+    Paths calculated by key indentation level -- it's more efficient and secure,
+      but doesn't support inline hashes.
     """
 
     # Get regions with YAML tags

@@ -168,6 +168,7 @@ class GotoYamlSymbolCommand(sublime_plugin.TextCommand):
     Opens quick panel with YAML symbols.
     """
 
+    # pylint: disable=unused-argument # sublime requires edit param, even though it's unused
     def run(self, edit):
         symbols = view_data.get(self.view, "yaml_symbols") or []
 
@@ -196,6 +197,7 @@ class CopyYamlSymbolToClipboardCommand(sublime_plugin.TextCommand):
         self.detect_locale_filename_re = re.compile(get_setting("detect_locale_filename_re"), re.I)
         self.trim_language_tag_on_copy_from_locales = get_setting("trim_language_tag_on_copy_from_locales")
 
+    # pylint: disable=unused-argument # sublime requires edit param, even though it's unused
     def run(self, edit):
         """
         Copies selected YAML symbol into clipboard.
